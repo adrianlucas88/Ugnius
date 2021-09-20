@@ -1,0 +1,156 @@
+@media screen and (max-width: 1400px) {
+  .mother {
+    font-size: 120%;
+  }
+  .song-name {
+    font-size: 86%;
+  }
+  .about__img {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .mother {
+    font-size: 86%;
+  }
+  .song-name {
+    font-size: 84%;
+  }
+}
+@media screen and (max-width: 801px) {
+  .name-container {
+    display: none;
+  }
+
+  .main_nav li {
+    display: table-caption;
+    border-bottom: 2px solid transparent;
+  }
+
+  .main_nav li a {
+    border-bottom: 2px solid transparent;
+  }
+
+  .main_nav li a:hover {
+    border-bottom: 2px solid transparent;
+  }
+
+  .social {
+    bottom: -40px;
+  }
+
+  .author-text {
+    font-size: 120%;
+  }
+
+  .mother {
+    font-size: 350%;
+    padding-top: 10%;
+  }
+
+  .song-name {
+    font-size: 200%;
+  }
+
+  #pict {
+    width: 0;
+    height: 0;
+  }
+
+  .invite-text {
+    font-size: 240%;
+    text-align: left;
+  }
+
+  .signature {
+    margin: 0 40%;
+  }
+  .about_container {
+    height: 100vh;
+    width: 100vw;
+    margin: 10% 0 10%;
+  }
+  .about__img {
+    width: 0;
+    margin: 0;
+  }
+  .about-title {
+    background-color: white;
+    top: auto;
+    width: 99%;
+    height: 100%;
+    margin: 0;
+    overflow: auto;
+  }
+  .contsec {
+    margin: auto;
+  }
+
+  h2 {
+    padding-top: 10vh;
+  }
+  .music {
+    width: 98.5%;
+    margin-left: 0;
+  }
+  .column {
+    margin: 0;
+    width: 93vw;
+    overflow: hidden;
+  }
+  .sidebyside {
+    display: block;
+  }
+
+  .media-player {
+    width: 90vw;
+  }
+
+  .picture {
+    width: 0;
+  }
+  .contact {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .social {
+    bottom: -40px;
+  }
+  .column {
+    margin: 0;
+    width: 97.5vw;
+    overflow: hidden;
+    border: none;
+    height: auto;
+  }
+  .song-2 {
+    margin: 5px 0 0 0;
+  }
+  .song-3 {
+    margin: 5px 0 0 0;
+  }
+  .mother,
+  .song-name {
+    font-size: 100%;
+  }
+
+  .about-title {
+    position: absolute;
+    background-color: white;
+    top: auto;
+    left: 0;
+    width: 97.5%;
+    height: 100%;
+    margin: 0;
+    border: none;
+    overflow: auto;
+    z-index: 500;
+  }
+  .music {
+    width: 97.5%;
+  }
+}

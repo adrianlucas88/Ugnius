@@ -1,0 +1,68 @@
+.music {
+  width: 79.5%;
+  font-family: "Six Caps";
+  color: #ce000f;
+  font-size: 300%;
+  text-align: center;
+  border: 5px solid red;
+  margin-left: 10%;
+  margin-bottom: 10%;
+}
+.song-1:hover,
+.song-2:hover,
+.song-3:hover {
+  border: 20px solid red;
+}
+h1 {
+  display: block;
+  font-family: "Six Caps";
+  color: #ce000f;
+  font-size: 300%;
+  text-align: center;
+}
+.song-name {
+  font-family: "Six Caps", sans-serif;
+  text-align: center;
+  color: #ce000f;
+  font-size: 121%;
+  height: 20%;
+  margin: 5%;
+}
+.song-1,
+.song-2,
+.song-3 {
+  background-color: black;
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+  border: 20px solid grey;
+}
+
+.song-2 {
+  background: black;
+}
+
+.column {
+  display: block;
+  width: 50%;
+  height: 100%;
+  margin: 5%;
+}
+
+.sidebyside {
+  display: flex;
+}
+
+.mother {
+  font-family: "Six Caps", sans-serif;
+  text-align: left;
+  color: #ce000f;
+  font-size: 200%;
+  height: 60%;
+  margin: 5%;
+}
+
+.media-player {
+  width: 90%;
+  height: 80px;
+}

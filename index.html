@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/Icons/favicon.png" />
+    <meta name="”description”" content="The text you want displayed here" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/queries.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&family=Six+Caps&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Eu-Gene</title>
+  </head>
+
+  <body class="body">
+    <header>
+      <!-- Colapsible Menu -->
+      <div class="navigation">
+        <input
+          type="checkbox"
+          class="navigation__checkbox"
+          id="navi-toggle"
+          onclick="togglebtn()"
+        />
+        <label for="navi-toggle" class="navigation__button">
+          <span class="navigation__icon">&nbsp;</span>
+        </label>
+        <div class="navigation__background" id="navo">&nbsp;</div>
+        <nav class="navigation__nav">
+          <ul class="navigation__list" id="items">
+            <li class="navigation__item">
+              <a id="item" href="#contact">Contact</a>
+            </li>
+            <li class="navigation__item">
+              <a id="item1" href="#about">About</a>
+            </li>
+            <li class="navigation__item">
+              <a id="item2" href="#sign">Music</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Header background -->
+      <div class="background--shadow">
+        <div class="header__background"></div>
+      </div>
+      <div class="name-container"></div>
+
+      <!-- SOcial Buttons -->
+      <div class="social">
+        <button
+          class="spotify"
+          onclick="window.open('https://open.spotify.com/artist/5ITRWCdAKh34pzTtZsa05D', 'mywindow');"
+        ></button>
+        <button
+          class="fb"
+          onclick="window.open('https://www.facebook.com/eugeneartistofficial/', 'mywindow');"
+        ></button>
+        <button
+          class="insta"
+          onclick="window.open('https://www.instagram.com/eugeneartistofficial/', 'mywindow');"
+        ></button>
+      </div>
+    </header>
+    <section class="about_container">
+      <div class="about__img" id="about"></div>
+      <div class="about-title">
+        About Me!
+        <p class="about-text">
+          It took me time to reach this level in my music, and I’m so glad I
+          stuck with it. I’ve felt the beginnings of my music from just a kid-
+          the vibrations resonating within me and an urge to recreate. So around
+          the age of 5, I just sit in front of a piano and start tapping away,
+          waiting for a harmony to my melody, waiting for something to strike a
+          note within me. Around those times I was listening to a Ukrainian
+          Singer, Ruslana. She was a modern take on folk music of Ukraine and
+          her take was so individual and unique, so powerful that I couldn’t get
+          enough. She was the first one to strike the match, and so I kept on
+          tapping. It was the new millennium before I caught up with the greats-
+          Sinatra, Ray Charles, Whitney Houston. Those unforgettable vocalists,
+          screaming to the world in all their complexity, but still expression
+          simple and pure. These artists spoke to me, it felt like every lyric
+          was twisted through my conscious, intertwined with the pulsing blood
+          in my veins. I moved the way they moved and kept the rhythm in time
+          until I felt myself glide onto a completely new path- one that felt
+          more like my own. Fast forward 10 years and I’ve taken these
+          influences and pushed them to new extremes. They’ve always been there
+          and probably always will, but now I’m writing my own music, singing my
+          own songs, expressing the way I felt like these artists did and more.
+          I’m writing my own story and hoping to inspire anyone in any margin
+          that I can. Music belongs to everyone and by singing I’m giving my
+          audience a piece of me. Now, I try to remain creative and free,
+          without restricting myself to genres or titles. When I sing, my
+          worries are released and the simple stresses of an average life flood
+          out of me, like a dam’s been broken or something. I’ve grown a lot,
+          and learned a lot about music, listened and thought about a lot of
+          things- about creating something that’s minimal and tasteful, keeping
+          it classy. I’ve so many ideas that I’m looking to explore and more
+          inspirations that I continue to aspire towards, but I do now what I’ve
+          always wanted to do, and I’ll still be doing it tomorrow.
+        </p>
+      </div>
+    </section>
+    <section class="music">
+      Music
+      <div class="sidebyside" id="sign">
+        <div class="column song-1">
+          <p class="song-name"><strong>MOTHER</strong></p>
+          <iframe
+            src="https://open.spotify.com/embed/album/5xiEJHugqyZtgbOFSumt6R"
+            class="media-player"
+          >
+          </iframe>
+        </div>
+        <div class="column song-2">
+          <h2 class="song-name" >Brain.error feat. Eu-Gene</h2>
+          <iframe
+            src="https://open.spotify.com/embed/album/68AsybPjxxmJMJLciW9SoF"
+            class="media-player"
+          >
+          </iframe>
+        </div>
+        <div class="column song-3">
+          <h2 class="song-name">For Good Old Times</h2>
+          <iframe src="https://open.spotify.com/embed/track/2LhClayDLHBcRcHL9cQHso"
+          class="media-player">
+        </iframe>
+          </iframe>
+        </div>
+      </div>
+    </section>
+    <section class="contact">
+      <div class="box contact-container">
+        <h1 class="contact-text">Contact me!</h1>
+        <div class="contact-form" id="contact">
+          <div class="container">
+            <form
+              method="POST"
+              name="contact_form"
+              action="contact-form-handler.php"
+            >
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your name.."
+              />
+              <input
+                type="text"
+                id="email"
+                name="email"
+                placeholder="Your email.."
+              />
+              <textarea
+                id="subject"
+                name="subject"
+                placeholder="Write something.."
+                style="height: 200px"
+              >
+              </textarea>
+              <input type="submit" value="Submit" />
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="picture"></div>
+    </section>
+    <section class="footer">
+      <p class="footer-text">
+        Copyright © 2019-2021 Eu-Gene. All Rights Reserved
+      </p>
+    </section>
+    <script src="index.js"></script>
+    <script>
+      src = "contact-form-handler.php";
+    </script>
+  </body>
+</html>

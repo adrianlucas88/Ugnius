@@ -1,0 +1,443 @@
+/* Colors:
+red:#ce000f
+Orange:rgb(255, 145, 0)
+grey:rgb(192, 192, 192) 
+green:rgba(255, 255, 0, .4)*/
+.navigation__checkbox {
+  display: none;
+}
+
+.navigation__button {
+  background-color: #fff;
+  height: 4rem;
+  width: 4rem;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  border-radius: 50%;
+  z-index: 2000;
+  box-shadow: 0 0 0.5rem black;
+  text-align: center;
+  cursor: pointer;
+}
+
+.navigation__background {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background-image: radial-gradient(white, orange);
+  z-index: 1000;
+  transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.navigation__nav {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1500;
+  opacity: 0;
+  width: 0;
+  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.navigation__list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center;
+  width: 100%;
+}
+
+.navigation__item {
+  margin: 3rem;
+  text-decoration: none;
+}
+
+.navigation__item a {
+  font-size: 0;
+  text-decoration: none;
+  color: orangered;
+}
+
+.navigation__link:link,
+.navigation__link:visited {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 300;
+  padding: 1rem 2rem;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
+  background-size: 220%;
+  transition: all 0.4s;
+}
+
+.navigation__link:link span,
+.navigation__link:visited span {
+  margin-right: 1.5rem;
+  display: inline-block;
+}
+
+.navigation__link:hover,
+.navigation__link:active {
+  background-position: 100%;
+  color: #55c57a;
+  transform: translateX(1rem);
+}
+
+.navigation__checkbox:checked ~ .navigation__background {
+  transform: scale(80);
+}
+
+.navigation__checkbox:checked ~ .navigation__nav {
+  opacity: 1;
+  width: 100%;
+}
+
+.navigation__icon {
+  position: relative;
+  margin-top: 2rem;
+}
+
+.navigation__icon,
+.navigation__icon::before,
+.navigation__icon::after {
+  width: 2rem;
+  height: 2px;
+  background-color: #333;
+  display: inline-block;
+}
+
+.navigation__icon::before,
+.navigation__icon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  transition: all 0.2s;
+}
+
+.navigation__icon::before {
+  top: -0.5rem;
+}
+
+.navigation__icon::after {
+  top: 0.5rem;
+}
+
+.navigation__button:hover .navigation__icon::before {
+  top: -0.7rem;
+}
+
+.navigation__button:hover .navigation__icon::after {
+  top: 0.7rem;
+}
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon {
+  background-color: transparent;
+}
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon::before {
+  top: 0;
+  transform: rotate(135deg);
+}
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon::after {
+  top: 0;
+  transform: rotate(-135deg);
+}
+
+.social {
+  display: flex;
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+}
+
+.spotify:hover,
+.fb:hover,
+.insta:hover {
+  background-size: contain;
+  transition: 200ms;
+  width: 3rem;
+  height: 3rem;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+.spotify:focus,
+.fb:focus,
+.insta:focus {
+  outline: none;
+  width: 3rem;
+  height: 3rem;
+}
+
+.fb,
+.insta,
+.spotify {
+  width: 2.5rem;
+  height: 2.5rem;
+  background: url(./Icons/facebook.svg);
+  background-size: contain;
+  background-color: transparent;
+  border-style: hidden;
+  border-radius: 20%;
+}
+
+.insta {
+  background: url(Icons/instagram.svg);
+  margin-left: 5px;
+}
+
+.spotify {
+  background: url(Icons/spotify.svg);
+  background-size: contain;
+  margin-right: 5px;
+}
+
+.body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  text-rendering: optimizeLegibility;
+  font-size: 20px;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  background: white;
+}
+
+.header__background {
+  background-image: linear-gradient(rgba(255, 255, 0, 0.4), rgba(255, 0, 0, 0.5)), url(./Images/back.png);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  clip-path: polygon(0 20%, 100% 0%, 100% 80%, 0% 100%);
+  height: 100vh;
+}
+
+.name-container {
+  position: absolute;
+  background-image: url(./Images/eug-black.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  bottom: 10%;
+  left: 0;
+  height: 60%;
+  width: 30%;
+}
+
+.footer {
+  display: block;
+  width: 100%;
+  height: 0;
+}
+
+.footer-text {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: "open sans", bold;
+  font-size: 80%;
+  color: white;
+}
+
+.about_container {
+  display: flex;
+  height: 100vh;
+  margin: 10%;
+  width: 80%;
+}
+
+.about__img {
+  background-image: url(./Images/about-back-min.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.about-title {
+  width: 150%;
+  font-family: "Six Caps";
+  color: #ce000f;
+  font-size: 300%;
+  text-align: center;
+  border: 5px solid red;
+  padding-top: 5%;
+  overflow: auto;
+}
+
+.about-text {
+  font-family: "open sans";
+  color: #000000;
+  text-indent: 5vw;
+  height: 60vh;
+  width: 100%;
+  font-size: 32%;
+  text-align: left;
+  padding-top: 10%;
+}
+
+.music {
+  width: 79.5%;
+  font-family: "Six Caps";
+  color: #ce000f;
+  font-size: 300%;
+  text-align: center;
+  border: 5px solid red;
+  margin-left: 10%;
+  margin-bottom: 10%;
+}
+
+.song-1:hover,
+.song-2:hover,
+.song-3:hover {
+  border: 20px solid red;
+}
+
+h1 {
+  display: block;
+  font-family: "Six Caps";
+  color: #ce000f;
+  font-size: 300%;
+  text-align: center;
+}
+
+.song-name {
+  font-family: "Six Caps", sans-serif;
+  text-align: center;
+  color: #ce000f;
+  font-size: 121%;
+  height: 20%;
+  margin: 5%;
+}
+
+.song-1,
+.song-2,
+.song-3 {
+  background-color: black;
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+  border: 20px solid grey;
+}
+
+.song-2 {
+  background: black;
+}
+
+.column {
+  display: block;
+  width: 50%;
+  height: 100%;
+  margin: 5%;
+}
+
+.sidebyside {
+  display: flex;
+}
+
+.mother {
+  font-family: "Six Caps", sans-serif;
+  text-align: left;
+  color: #ce000f;
+  font-size: 200%;
+  height: 60%;
+  margin: 5%;
+}
+
+.media-player {
+  width: 90%;
+  height: 80px;
+}
+
+.box {
+  text-align: center;
+  background-color: black;
+  margin: 0;
+}
+
+.contact {
+  display: flex;
+  background-color: black;
+  height: 25rem;
+  width: 100%;
+}
+
+.contact-container {
+  width: 100%;
+}
+
+.contact-form {
+  display: inline-block;
+}
+
+input[type=text],
+select,
+textarea {
+  font-family: "Open Sans";
+  font-size: 70%;
+  width: 100%;
+  padding: 12px;
+  border: 5px solid black;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 6px;
+  resize: vertical;
+  text-indent: 0;
+}
+
+input[type=submit] {
+  background-color: #810009;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #ce000f;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: transparent;
+  padding: 20px;
+}
+
+.contact-text {
+  color: #ce000f;
+  text-align: center;
+  font-size: 300%;
+  font-family: "Six Caps";
+  margin: 0;
+}
+
+.picture {
+  background-image: url(Images/contact-pic.png);
+  background-color: black;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */

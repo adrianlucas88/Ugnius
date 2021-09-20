@@ -1,0 +1,38 @@
+.about_container {
+  display: flex;
+  height: 100vh;
+  margin: 10%;
+  width: 80%;
+}
+
+.about__img {
+  background-image: url(./Images/about-back-min.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.about-title {
+  width: 150%;
+  font-family: "Six Caps";
+  color: #ce000f;
+  font-size: 300%;
+  text-align: center;
+  border: 5px solid red;
+  padding-top: 5%;
+  overflow: auto;
+}
+
+.about-text {
+  font-family: "open sans";
+  color: #000000;
+  text-indent: 5vw;
+  height: 60vh;
+  width: 100%;
+  font-size: 32%;
+  text-align: left;
+  padding-top: 10%;
+}
